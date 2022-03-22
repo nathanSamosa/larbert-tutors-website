@@ -11,6 +11,14 @@
     overflow: hidden;
 }
 
-.homepage-container[data="overflow"] {
+.homepage[data="overflow"] .homepage-container {
     overflow-y: visible;
+}
+
+.homepage .homepage-container > * {
+    transition-duration: 2s;
+}
+
+.homepage[data="overflow"] .homepage-container > * {
+    transform: translateY(-100vh);
 }

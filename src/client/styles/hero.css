@@ -23,7 +23,6 @@
     filter: blur(2px);
     z-index: 1;
 }
-
 .hero-content {
     width: 100vw;
     height: 100%;
@@ -76,10 +75,6 @@
 .hero-button-student {
     transition-delay: 0;
     background-color: var(--clr-brown2);
-}
-
-.hero[data="collapsed"] {
-    height: 0;
 }
 
 .hero[data="collapsed"] .hero-content {
