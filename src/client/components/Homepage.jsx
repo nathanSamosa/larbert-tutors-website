@@ -19,8 +19,8 @@ export const Homepage = () => {
     }, [homepageContent])
 
     return (
-        <div className="homepage">
-            <div className="homepage-container" data={homepageActive ? "overflow" : null}>
+        <div className="homepage" data={homepageActive ? "overflow" : null}>
+            <div className="homepage-container">
                 <Hero handleClick={e => handleClick(e)} homepageActive={homepageActive}/>
                 <Tutor />
             </div>
