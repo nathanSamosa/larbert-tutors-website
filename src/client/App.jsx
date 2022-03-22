@@ -9,7 +9,7 @@ import './App.css';
 import './styles/reveal.css'
 
 export const App = () => {
-
+    //Test
     const revealElements = () => {
         const reveals = document.querySelectorAll('.reveal, .reveal-left');
         for (var i = 0; i < reveals.length; i++) {
