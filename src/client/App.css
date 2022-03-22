@@ -1,0 +1,24 @@
+.App {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    background-color: var(--clr-grey2);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    color: var(--clr-white);
+    transition-duration: 0.25s;
+}
+
+button:hover {
+    text-shadow: 1px 1px 5px var(--clr-white);
+    cursor: pointer;
+}
