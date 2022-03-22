@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
+:root {
+    --ff-primary: 'Roboto';
+    --ff-secondary: 'Quicksand';
+
+    --clr-blue1: hsl(173, 31%, 11%);
+    --clr-blue2: hsl(196, 11%, 41%);
+    --clr-brown1: hsl(21, 66%, 15%);
+    --clr-brown2: hsl(22, 38%, 47%);
+    --clr-brown3: hsl(22, 54%, 67%);
+
+    --clr-black1: hsl(0, 1%, 19%);
+    --clr-black2: hsl(0, 0%, 38%);
+    --clr-grey1: hsl(195, 10%, 53%);
+    --clr-grey2: hsl(0, 0%, 92%);
+    --clr-white: hsl(0, 0%, 100%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-secondary);
+    overflow-x: hidden;
+}
