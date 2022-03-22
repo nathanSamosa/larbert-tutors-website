@@ -18,11 +18,15 @@
     --clr-white: hsl(0, 0%, 100%);
 }
 
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--ff-secondary);
-    overflow-x: hidden;
 }

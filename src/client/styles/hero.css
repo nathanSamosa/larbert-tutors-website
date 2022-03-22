@@ -1,0 +1,97 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    overflow: hidden;
+    transition-duration: 2s;
+}
+
+.hero > * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-background {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/public/books.png');
+    background-size: cover;
+    background-position: center center;
+    transform: scale(1.03);
+    filter: blur(2px);
+    z-index: 1;
+}
+
+.hero-content {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    z-index: 2;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.hero h2 {
+    padding-bottom: 40px;
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+.hero button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    color: var(--clr-white);
+    width: 200px;
+    font-weight: 300;
+}
+
+
+.hero .button-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 200px;
+    
+}
+
+.hero-button-tutor {
+    transition-delay: 0;
+    background-color: var(--clr-brown1);
+}
+
+.hero-button-student {
+    transition-delay: 0;
+    background-color: var(--clr-brown2);
+}
+
+.hero[data="collapsed"] {
+    height: 0;
+}
+
+.hero[data="collapsed"] .hero-content {
+    opacity: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .hero .button-container {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+    }
+}

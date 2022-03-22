@@ -1,0 +1,16 @@
+.homepage {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.homepage-container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.homepage-container[data="overflow"] {
+    overflow-y: visible;
+}

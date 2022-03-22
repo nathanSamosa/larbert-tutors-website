@@ -1,0 +1,89 @@
+.App-header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    background-color: var(--clr-blue2);
+    padding: 5px 40px;
+    z-index: 100;
+}
+
+.App-header * {
+    overflow-y: hidden;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.App-header h1 {
+    color: var(--clr-white);
+    font-size: clamp(1.25rem, 7.5vw, 2.5rem)
+}
+
+.App-header button {
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+}
+
+nav .button-container {
+    transition-duration: 1s;
+}
+
+@media screen and (max-width: 550px) {
+    .App-header {
+        padding: 0;
+    }
+    .header-container {
+        padding: 5px 10px;
+    }
+    .hamburger-button {
+        display: visible;
+    }
+    nav {
+        background-color: var(--clr-white);
+    }
+    nav .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        
+    }
+    nav .button-container > * {
+        border-top: 1px solid var(--clr-grey1);
+        width: 100%;
+        text-align: left;
+    }
+    nav button {
+        color: var(--clr-blue1);
+        padding: 2px 20px;
+    }
+    nav .button-container[data="collapsed"] {
+        transition-duration: 1s;
+        height: 0;
+    }
+    nav .button-container[data="expanded"] {
+        transition-duration: 1s;
+        height: 70px;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .App-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .hamburger-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 225px) {
+    .header-container h1 {
+        display: none;
+    }
+}
