@@ -26,8 +26,8 @@ export const Header = () => {
                 <button className="hamburger-button" onClick={() => handleMenuToggle()}>Nav</button>
             </div>
             
-            <nav>
-                <div data={showLinks ? "expanded" : "collapsed"} className="button-container">
+            <nav data={showLinks ? "expanded" : "collapsed"}>
+                <div className="button-container">
                     <button onClick={() => handleClick('HOMEPAGE')}>{ROUTES.HOMEPAGE.CLIENT}</button>
                     <button onClick={() => handleClick('CONTACT')}>{ROUTES.CONTACT.CLIENT}</button>
                 </div>
