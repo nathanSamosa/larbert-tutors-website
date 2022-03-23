@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { Hero } from './Hero';
-import { Tutor } from './Tutor';
+import { HomepageContent } from './HomepageContent';
 
 import '../styles/homepage.css'
 
@@ -22,7 +22,9 @@ export const Homepage = () => {
         <div className="homepage" data={homepageActive ? "overflow" : null}>
             <div className="homepage-container">
                 <Hero handleClick={e => handleClick(e)} homepageActive={homepageActive}/>
-                <Tutor />
+                <div className="homepage-content">
+                    {homepageContent && <HomepageContent content={homepageContent} />}
+                </div>
             </div>
         </div>
     )
