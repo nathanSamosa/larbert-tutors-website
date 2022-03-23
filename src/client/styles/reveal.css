@@ -1,7 +1,7 @@
 .reveal * {
     transform: translateY(100px);
     opacity: 0;
-    transition: 1s all ease;
+    transition-duration: 1s;
 }
 
 .reveal.active * {
