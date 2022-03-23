@@ -1,0 +1,35 @@
+.homepage-content {
+    position: relative;
+    background-color: var(--clr-white);
+    transition-duration: 1s;
+}
+
+.homepage-content-title > * {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.homepage-body > * {
+    padding: 10rem 40px;
+    font-size: 1.5rem;
+}
+
+.homepage-content-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: var(--clr-grey2);
+}
+
+.homepage-content h1 {
+    color: var(--clr-blue2)
+}
+
+@media screen and (max-width: 625px) {
+    .homepage-body > * {
+        padding: 5rem 19px;
+    }
+}
